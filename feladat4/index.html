@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Termékek árára vonatkozó számítások</title>
+</head>
+<body>
+    <h1>Termékek árára vonatkozó számítások</h1>
+    <p>Kérlek írd be a termék fantázianevét. A program mindig az eddig beírt termékekre vonatkozó
+         eredményeket írja ki.
+    </p>
+
+    <label for="productName">Termék neve:</label>
+    <input type="text" id="productName" placeholder="Fantázianév">
+
+    <label for="productPrice">Ár:</label>
+    <input type="number" id="productPrice" placeholder="Ár">
+
+    <button onclick="addProduct()">Termék hozzáadása</button>
+
+    <div id="results">
+        <h2>Eredmények:</h2>
+        <p id="cheapestProductName"></p>
+        <p id="averagePrice"></p>
+        <p id="priceVariance"></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
